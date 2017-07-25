@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.motelcontrol.motelcontrol.lock_door"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ProgressBar
+        android:id="@+id/indeterminateBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="55dp"
+        tools:layout_editor_absoluteX="162dp" />
+
+    <TextView
+        android:id="@+id/open_message"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Some213"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="164dp"
+        app:layout_constraintStart_toStartOf="@+id/open_button"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/open_button" />
+
+    <Button
+        android:id="@+id/open_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="243dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="212dp" />
+
+</android.support.constraint.ConstraintLayout>
